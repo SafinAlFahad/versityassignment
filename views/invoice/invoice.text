@@ -1,0 +1,15 @@
+<select class="form-control" style="width: 100%;" name="product" id="pdt">
+
+<?php foreach ($books as $b) { ?>
+<option value="<?= $b->id ?>"><?= $b->title ?> -- ISBN(<?= $b->isbn ?>) --
+<?= $b->selling_price ?> TK.</option>
+<?php } ?>
+</select>
+
+<input type="text" name="product" list="productName" class="form-control select2" style="width: 100%;" name="product" id="pdt">
+<datalist id="productName">
+<?php foreach ($books as $b) { ?>
+<option value="<?= $b->id ?>"><?= $b->title ?> -- ISBN(<?= $b->isbn ?>) --
+<?= $b->selling_price ?> TK.</option>
+<?php } ?>
+</datalist>

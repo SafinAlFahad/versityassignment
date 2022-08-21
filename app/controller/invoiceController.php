@@ -2,6 +2,8 @@
 if (isset($_REQUEST['clear'])) {
     clear();
 }
+
+//this is to test git commit
 function index()
 {
     $s = "select * from invoice_details order by id";

@@ -7,7 +7,7 @@ function index()
     $authors = json_decode($authors);
     return $authors;
 }
-
+//test
 function show()
 {
     $id = $_REQUEST['id'];
